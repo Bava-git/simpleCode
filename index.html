@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="css-FrameOut">
+        <p class="css-Title">Calculator</p>
+        <div class="css-FrameIn">
+            <div class="css-historyDiv" id="js-historyDiv">
+                <p>No history available</p>
+            </div>
+            <div class="css-calculatorDiv" id="js-calculatorDiv">
+                <input type="text" class="css-InputBox" id="js-InputBox">
+                <div class="css-ButtonFrame">
+                    <button class="css-AllButtons" id="js-AllButton" onclick="Reset();" title="Reset">&#10227;</button>
+                    <button class="css-AllButtons" id="js-AllButton" onclick="Clear();" title="Clear the input field">C</button>
+                    <button class="css-AllButtons" id="js-AllButton" onclick="Backspace();" title="Backspace">BS</button>
+                    <button class="css-AllButtons" id="js-AllButton" onclick="DisplayElement('/');">/</button>
+                    <button class="css-AllButtons" id="js-AllButton" onclick="DisplayElement('7');">7</button>
+                    <button class="css-AllButtons" id="js-AllButton" onclick="DisplayElement('8');">8</button>
+                    <button class="css-AllButtons" id="js-AllButton" onclick="DisplayElement('9');">9</button>
+                    <button class="css-AllButtons" id="js-AllButton" onclick="DisplayElement('*');">x</button>
+                    <button class="css-AllButtons" id="js-AllButton" onclick="DisplayElement('4');">4</button>
+                    <button class="css-AllButtons" id="js-AllButton" onclick="DisplayElement('5');">5</button>
+                    <button class="css-AllButtons" id="js-AllButton" onclick="DisplayElement('6');">6</button>
+                    <button class="css-AllButtons" id="js-AllButton" onclick="DisplayElement('-');">-</button>
+                    <button class="css-AllButtons" id="js-AllButton" onclick="DisplayElement('1');">1</button>
+                    <button class="css-AllButtons" id="js-AllButton" onclick="DisplayElement('2');">2</button>
+                    <button class="css-AllButtons" id="js-AllButton" onclick="DisplayElement('3');">3</button>
+                    <button class="css-AllButtons" id="js-AllButton" onclick="DisplayElement('+');">+</button>
+                    <button class="css-AllButtons" id="js-AllButton" onclick="showHistory();" title="History">&#x210D;</button>
+                    <button class="css-AllButtons" id="js-AllButton" onclick="DisplayElement('0');">0</button>
+                    <button class="css-AllButtons" id="js-AllButton" onclick="DisplayElement('.');">.</button>
+                    <button class="css-AllButtons" id="js-AllButton" onclick="Calcution();" title="Perform the calculation">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
